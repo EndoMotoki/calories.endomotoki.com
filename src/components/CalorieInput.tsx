@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Button, TextField, Typography, Container, Box} from '@mui/material';
+import { TextField, Button, Box } from '@mui/material';
 
 interface CalorieInputProps {
     onAddCalories: (calories: number) => void;
@@ -11,7 +11,7 @@ const CalorieInput: React.FC<CalorieInputProps> = ({ onAddCalories }) => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         const caloriesNum = parseInt(calories);
-        if (!isNaN(caloriesNum)) {
+        if (!isNaN(caloriesNum) && caloriesNum > 0) {
             onAddCalories(caloriesNum);
             setCalories('');
         }
