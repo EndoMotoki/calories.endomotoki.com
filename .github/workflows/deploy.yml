@@ -5,6 +5,10 @@ on:
     branches:
       - master
 
+defaults:
+  run:
+    working-directory: src
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
