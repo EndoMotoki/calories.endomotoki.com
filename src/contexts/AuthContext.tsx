@@ -8,7 +8,6 @@ import {
     onAuthStateChanged
 } from 'firebase/auth';
 import { auth } from '../firebase';
-import firebase from "firebase/compat";
 
 interface AuthContextType {
     user: User | null;
