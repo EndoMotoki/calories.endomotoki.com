@@ -95,7 +95,7 @@ const CalorieTracker: React.FC = () => {
         <Container maxWidth="md">
             <Box textAlign="center" my={4}>
                 <Typography variant="h2" component="h1">
-                    今日の摂取カロリー。
+                    今日の摂取カロリー
                 </Typography>
                 <Typography variant="h1" component="p" style={{ fontSize: '6rem', fontWeight: 'bold' }}>
                     {dailyCalories} kcal
