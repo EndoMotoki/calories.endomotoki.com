@@ -11,15 +11,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: actions/checkout@v2
-      - name: Set working directory
-        run: |
-          cd "/home/runner/work/calories.endomotoki.com"
-
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '16'
+
+      - name: Debug information
+        run: |
+          echo "Current directory: $(pwd)"
+          ls -R
 
       - name: Install Dependencies
         run: npm ci
